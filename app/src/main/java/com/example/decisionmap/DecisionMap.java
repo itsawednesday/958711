@@ -64,12 +64,13 @@ public class DecisionMap {
 
 
     private void buildOrderedMap() {
+
         if (this.head != null) {
-            return;
-        }
+
+
         DecisionNode nodeLinker;
         nodeLinker = head;
-        while (nodeLinker !=null){
+        while (nodeLinker !=null) {
 
 
             int choise1ID = nodeLinker.getChoise1ID();
@@ -79,7 +80,17 @@ public class DecisionMap {
             DecisionNode choise2Node = nodeFetch(choise2ID);
             nodeLinker.setChoise1Node(choise1Node);
             nodeLinker.setChoise2Node(choise2Node);
+
+            nodeLinker = nodeLinker.getLinkedNode();
         }
+        //    nodeLinker = nodeLinker.getChoise1Node().getChoise2Node();
+         //   nodeLinker = nodeLinker.getChoise2Node();
+
+
+
+        }
+
+
 
         this.cleanup();
     }

@@ -14,15 +14,9 @@
         android:layout_height="wrap_content"
         android:text="textView"
 
-        /><![CDATA[
-
-
+        />
 
     TextView>
-
-
-    ]]>
-
     <Button
         android:id="@+id/getOption"
         android:layout_width="393dp"

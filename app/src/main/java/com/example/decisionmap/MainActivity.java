@@ -51,10 +51,15 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
 
+                 //   System.out.println(node.getDescription());
 
                     node = node.getChoise1Node();
+                 //   System.out.println(node.getDescription());
                     description.setText(node.getDescription());
+
                     choise1Node.setText(node.getOption());
+
+
                     choise2Node.setText(node.getOption2());
 
                 }
